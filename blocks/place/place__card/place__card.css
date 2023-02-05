@@ -1,0 +1,15 @@
+.place__card {
+    margin: 0;
+    max-width: 282px;
+    max-height: 362px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+    .place__card {
+        max-height: 361px;
+    }
+}
