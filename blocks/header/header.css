@@ -3,12 +3,13 @@
   margin: 0 auto 40px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
 }
 
 @media screen and (max-width: 425px) {
   .header {
     min-height: 56px;
     margin: 0 auto 42px;
+    padding: 0 -100% 0;
   }
 }
