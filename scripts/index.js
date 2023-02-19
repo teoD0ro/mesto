@@ -106,8 +106,6 @@ const initialCards = [
 ];
 initialCards.forEach((item) => {
     const placeCardElement = placeCardTemplate.querySelector('.place__card').cloneNode(true);
-    let placeImage = placeCardElement.querySelector('.place__image').src;
-    let placeName = placeCardElement.querySelector('.place__name').textContent;
     placeCardElement.querySelector('.place__image').src = item.link;
     placeCardElement.querySelector('.place__name').textContent = item.name;
     place.prepend(placeCardElement);
