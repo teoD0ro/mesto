@@ -1,0 +1,20 @@
+.place__image {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+    height: calc(362vw/1280*100);
+    max-height: 282px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .place__image {
+        height: calc(362vw/768*100);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .place__image {
+        height: calc(362vw/425*100);
+    }
+}

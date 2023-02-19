@@ -23,11 +23,12 @@
       <button class="profile__add-button" type="button"></button>
     </section>
     <section class="place">
-      <article class="place__card">
+      <!-- <article class="place__card">
         <img class="place__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Вид" data-type="">
         <div class="place__info">
           <h2 class="place__name">Карачаевск</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
       </article>
       <article class="place__card">
@@ -35,6 +36,7 @@
         <div class="place__info">
           <h2 class="place__name">Гора Эльбрус</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
       </article>
       <article class="place__card">
@@ -42,6 +44,7 @@
         <div class="place__info">
           <h2 class="place__name">Домбай</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
       </article>
       <article class="place__card">
@@ -49,6 +52,7 @@
         <div class="place__info">
           <h2 class="place__name">Гора Эльбрус</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
       </article>
       <article class="place__card">
@@ -56,6 +60,7 @@
         <div class="place__info">
           <h2 class="place__name">Домбай</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
       </article>
       <article class="place__card">
@@ -63,24 +68,57 @@
         <div class="place__info">
           <h2 class="place__name">Карачаево-Черкессия</h2>
           <button class="place__like-button" type="button"></button>
+          <button class="place__delete-button" type="button"></button>
         </div>
-      </article>
+      </article> -->
     </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
   </footer>
-  <div class="popup">
-    <div class="popup__container">
+  <div id="profile_editor_popup" class="popup">
+    <div class="popup__container popup__container_content_form">
       <h2 class="popup__title">Редактировать профиль</h2>
-      <form class="form" action="#" method="post" name="profile editor form">
-        <input type="text" placeholder="Имя" id="name" name="name" class="form__text form__text_type_name">
-        <input type="text" placeholder="О себе" id="status" name="status" class="form__text form__text_type_status">
+      <form class="form" action="#" method="post" name="profile_editor_form">
+        <input type="text" placeholder="Имя" id="First_field" name="name" class="form__text form__text_type_name">
+        <input type="text" placeholder="О себе" id="Second_field" name="status"
+          class="form__text form__text_type_status">
         <button class="form__submit-button form__submit-button_action_add" type="submit">Сохранить</button>
       </form>
       <button class="popup__close-button" type="button"></button>
     </div>
   </div>
+  <div id="add_card_popup" class="popup">
+    <div class="popup__container popup__container_content_form">
+      <h2 class="popup__title">Новое место</h2>
+      <form class="form" action="#" method="post" name="add_card_form">
+        <input type="text" placeholder="Название" id="First_field" name="title"
+          class="form__text form__text_type_title">
+        <input type="text" placeholder="Ссылка на картинку" id="Second_field" name="link"
+          class="form__text form__text_type_link">
+        <button class="form__submit-button form__submit-button_action_add" type="submit">Сохранить</button>
+      </form>
+      <button class="popup__close-button" type="button"></button>
+    </div>
+  </div>
+  <div id="image_popup" class="popup">
+    <div class="popup__container popup__container_content_image">
+      <img class="popup__image" src="" alt="Вид" data-type="">
+      <h2 class="popup__subtitle"></h2>
+      <button class="popup__close-button" type="button"></button>
+    </div>
+  </div>
+
+  <template id="place__card-template">
+    <article class="place__card">
+      <img class="place__image" src="" alt="Вид" data-type="">
+      <div class="place__info">
+        <h2 class="place__name"></h2>
+        <button class="place__like-button" type="button"></button>
+        <button class="place__delete-button" type="button"></button>
+      </div>
+    </article>
+  </template>
   <script src="./scripts/index.js"></script>
 </body>
 

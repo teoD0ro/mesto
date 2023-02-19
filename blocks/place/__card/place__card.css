@@ -1,10 +1,15 @@
 .place__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 22px;
     margin: 0;
     max-width: 282px;
     max-height: 362px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+
 }
 
 @media screen and (max-width: 425px) {
